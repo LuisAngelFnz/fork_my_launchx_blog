@@ -1,21 +1,20 @@
 ---
-title: 'About me'
+title: 'Acerca de mi'
 menu:
   main:
-    name: "AboutMe"
+    name: "Un poco acerca de persona"
 ---
 
-## Who am I
+## Quien es Luís Ángel?
 
 Hola, aquí vas a leer un poco sobre mi 🤩
 
-> Excidit gente, si orat suo quaeque dura Calydon nata? Pars auro post stetit
-> adfusique imis amplexus. Agmina per fabricator
-> mittere Erymanthon habetque tot.
+Mi nombre completo es ***Luís Ángel Fernández Vásquez***.\
+Soy originario de *Córdoba*, *Veracruz* la ciudad de *Los 30 caballeros*.\
+Actualmente vivo en *Veracruz* *Veracruz* en el mero Puerto.\
+Tengo 28 años.\
+Soy Ingeniero en Tegnologías de la Información y Comunicación.\
+Actualmente trabajo en una empresa dedicada al desarrollo de software para timbrado de CFDIs bajo el lenguaje de PYTHON\
 
-**Cineres Nile ipsa** origine discurrunt adest Unde, et quem clausus, imo,
-virens quoque tales, potuit. Ingentes insilit corpore nutricis praebebat roganti
-licuit. Denique a vestros adulantum in bella lina parte et arte generi di igitur
-quis, digitis pedes. Cum resonant tamen, namque in anxia. Non nostri trahens
-ancora.
+Saludos
 
