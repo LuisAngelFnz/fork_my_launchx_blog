@@ -1,6 +1,6 @@
 ---
 title: "La cultura de un desarrollad@r de Software"
-date: 2022-04-12T23:40:21-06:00
+date: 2022-04-12T23:39:21-06:00
 description: 'Este es mi primer post de la travesía en la Misión de Backend con Node JS de Launch X.'
 ---
 
