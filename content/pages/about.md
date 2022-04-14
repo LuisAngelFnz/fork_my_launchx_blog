@@ -2,7 +2,7 @@
 title: 'Acerca de mi'
 menu:
   main:
-    name: "Un poco acerca de persona"
+    name: "Un poco de mi"
 ---
 
 ## Quien es Luís Ángel?
