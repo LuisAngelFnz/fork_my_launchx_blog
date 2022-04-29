@@ -8,6 +8,18 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://luisangelfnz.github.io/fork_my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Git y GitHub, es lo mismo?</title>
+      <link>https://luisangelfnz.github.io/fork_my_launchx_blog/posts/post_2/</link>
+      <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://luisangelfnz.github.io/fork_my_launchx_blog/posts/post_2/</guid>
+      <description>Si buscas una respuesta rapida es &amp;ldquo;NO&amp;rdquo;pero te puedes quedar a lo que comprendí de estos conceptos.
+#GitHub
+ Es una plataforma en internet para guadar tus proyectos. Trabaja de la mano con Git para versionar(rastrear los cambios) los archivos. Ademas de guardar tus proyectos tiene herramientas para poner en internet proyectos de paginas(como el que estas leyendo).  #Git:
+ Es un programa realizado para sistemas operativos como MacOS, Linux y Windows.</description>
+    </item>
+    
+    <item>
       <title>La cultura de un desarrollad@r de Software</title>
       <link>https://luisangelfnz.github.io/fork_my_launchx_blog/posts/intro/</link>
       <pubDate>Tue, 12 Apr 2022 23:39:21 -0600</pubDate>
