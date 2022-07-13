@@ -7,7 +7,7 @@ description: 'Solución a problema con Terminator de grupo de pestañas'
 Recientemente me encontre con este bug en Terminator<br>
 cuando agrupo pestañas y empiezo a escribir se duplica lo tecleado ejemplo:
 
-[antes](../../static/images/post_3/before.png)
+![antes](../../tree/master/static/images/post_3/before.png)
 
 # Versiones de mi terminator y fedora
 - Terminator 2.1.1
