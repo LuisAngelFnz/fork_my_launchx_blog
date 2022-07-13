@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>BUG Terminator se presiona teclas 2 veces en modo grupo de pestañas - Bitácora de Viaje</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="https://luisangelfnz.github.io/fork_my_launchx_blog/favicon.png">
+
+  
+  
+  <link rel="stylesheet" href="../../css/style.min.4f4767d518839223786999cdb69fc7a63791220ecccd236bc732a5f998aaee2d.css">
+  
+
+  
+    <meta name="description" content="Solución a problema con Terminator de grupo de pestañas"/>
+    <meta property="og:title" content="BUG Terminator se presiona teclas 2 veces en modo grupo de pestañas"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://luisangelfnz.github.io/fork_my_launchx_blog/posts/post_3/"/>
+    
+    <meta property="og:description" content="Solución a problema con Terminator de grupo de pestañas"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@no_tengo_twiter"/>
+    <meta name="twitter:creator" content="@no_tengo_twiter"/>
+  
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+</head>
+
+
+
+
+<body class='page frame page-blog-single'>
+  <div id="wrapper" class="wrapper">
+    <div class='header'>
+  <a class="header-logo" href="https://luisangelfnz.github.io/fork_my_launchx_blog/">Bitácora de Viaje</a>
+  <div class="menu-main">
+    <ul>
+        
+        
+            <li class="menu-item-posts">
+                <a href="../../posts/">Posts</a>
+            </li>
+        
+            <li class="menu-item-un poco de mi">
+                <a href="../../pages/about/">Un poco de mi</a>
+            </li>
+        
+    </ul>
+  </div>
+</div>
+    
+  <div class="blog">
+    
+    <div class="intro">
+      <h1>BUG Terminator se presiona teclas 2 veces en modo grupo de pestañas<span class="dot">.</span></h1>
+      
+    </div>
+    <div class="content">
+      <p>Recientemente me encontre con este bug en Terminator<!-- raw HTML omitted -->.
+cuando agrupo pestañas y empiezo a escribir se duplica lo tecleado ejemplo:</p>
+<p><a href="../static/images/post_3/before.png">example</a></p>
+<h1 id="versiones-de-mi-terminator-y-fedora">Versiones de mi terminator y fedora</h1>
+<ul>
+<li>terminator 2.1.1</li>
+<li>Fedora 33</li>
+<li>Python 3.10.5</li>
+</ul>
+<h1 id="solucióncomo-super-usuario">Solución(como super usuario):</h1>
+<ul>
+<li>
+<p>Abrir el siguiente archivo con tu editor favorito
+| vim /usr/lib/python3.10/site-packages/terminatorlib/layoutlauncher.py</p>
+</li>
+<li>
+<p>antes de la linea que contiene <em>if <strong>name</strong> == &lsquo;<strong>main</strong>':</em></p>
+</li>
+<li>
+<p>Agregar el siguiente código:</p>
+</li>
+</ul>
+<p>| try:
+|    del os.environ[&lsquo;GTK_IM_MODULE&rsquo;]
+| except Exception as e:
+|     print(e)</p>
+<p><a href="../static/images/post_3/code.png">example</a></p>
+<ul>
+<li>Guardamos he iniciamos terminator con normalidad</li>
+</ul>
+<p><a href="../static/images/post_3/after.png">example</a></p>
+<ul>
+<li>Y listo espero les sirva</li>
+</ul>
+
+    </div>
+  </div>
+
+    <div class="footer">
+  
+  <div class="footer-social">
+    
+      <span class="social-icon social-icon-twitter">
+        <a href="https://twitter.com/xiaomi12" title="twitter" target="_blank" rel="noopener">
+          <img src="../../images/social/twitter.svg" width="24" height="24" alt="twitter"/>
+        </a>
+      </span>
+    
+      <span class="social-icon social-icon-github">
+        <a href="https://github.com/zerostaticthemes" title="github" target="_blank" rel="noopener">
+          <img src="../../images/social/github.svg" width="24" height="24" alt="github"/>
+        </a>
+      </span>
+    
+  </div>
+  
+</div>
+  </div>
+
+  
+
+  
+
+  
+  <script type="text/javascript" src="../../js/bundle.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js"></script>
+  
+
+  
+  
+
+  
+  
+  
+    
+  
+
+
+</body>
+</html>

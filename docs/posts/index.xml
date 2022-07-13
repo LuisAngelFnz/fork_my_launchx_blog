@@ -8,6 +8,20 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 24 Feb 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://luisangelfnz.github.io/fork_my_launchx_blog/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>BUG Terminator se presiona teclas 2 veces en modo grupo de pestañas</title>
+      <link>https://luisangelfnz.github.io/fork_my_launchx_blog/posts/post_3/</link>
+      <pubDate>Wed, 13 Jul 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://luisangelfnz.github.io/fork_my_launchx_blog/posts/post_3/</guid>
+      <description>Recientemente me encontre con este bug en Terminator. cuando agrupo pestañas y empiezo a escribir se duplica lo tecleado ejemplo:
+example
+Versiones de mi terminator y fedora  terminator 2.1.1 Fedora 33 Python 3.10.5  Solución(como super usuario):   Abrir el siguiente archivo con tu editor favorito | vim /usr/lib/python3.10/site-packages/terminatorlib/layoutlauncher.py
+  antes de la linea que contiene if name == &amp;lsquo;main&#39;:
+  Agregar el siguiente código:
+  | try: | del os.</description>
+    </item>
+    
+    <item>
       <title>Git y GitHub, es lo mismo?</title>
       <link>https://luisangelfnz.github.io/fork_my_launchx_blog/posts/post_2/</link>
       <pubDate>Thu, 28 Apr 2022 00:00:00 +0000</pubDate>
