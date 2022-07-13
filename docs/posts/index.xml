@@ -14,7 +14,6 @@
       
       <guid>https://luisangelfnz.github.io/fork_my_launchx_blog/posts/post_3/</guid>
       <description>Recientemente me encontre con este bug en Terminatorcuando agrupo pestañas y empiezo a escribir se duplica lo tecleado ejemplo:
-antes
 Versiones de mi terminator y fedora  Terminator 2.1.1 Fedora 33 Python 3.10.5  Solución(como super usuario):  Abrir el siguiente archivo con tu editor favorito   vim /usr/lib/python3.10/site-packages/terminatorlib/layoutlauncher.py
    Antes de la linea que contiene if name == &amp;lsquo;main&#39;:
   Agregar el siguiente código:
