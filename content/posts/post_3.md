@@ -7,7 +7,7 @@ description: 'Solución a problema con Terminator de grupo de pestañas'
 Recientemente me encontre con este bug en Terminator<br>
 cuando agrupo pestañas y empiezo a escribir se duplica lo tecleado ejemplo:
 
-![antes](../../static/images/post_3/after.jpg)
+![antes](./images/post_3/after.jpg)
 
 # Versiones de mi terminator y fedora
 - Terminator 2.1.1
@@ -30,12 +30,12 @@ cuando agrupo pestañas y empiezo a escribir se duplica lo tecleado ejemplo:
 
 ejmplo:
 
-![image info](./docs/images/post_3/code.png)
+![image info](./images/post_3/code.png)
 
 
 - Guardamos he iniciamos terminator con normalidad
 
-![despues](../../static/images/post_3/after.png)
+![despues](./images/post_3/after.png)
 
 - Y listo espero les sirva
 
