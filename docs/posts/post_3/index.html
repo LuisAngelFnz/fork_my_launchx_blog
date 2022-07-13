@@ -59,37 +59,42 @@
       
     </div>
     <div class="content">
-      <p>Recientemente me encontre con este bug en Terminator<!-- raw HTML omitted -->.
+      <p>Recientemente me encontre con este bug en Terminator<!-- raw HTML omitted -->
 cuando agrupo pestañas y empiezo a escribir se duplica lo tecleado ejemplo:</p>
-<p><a href="../static/images/post_3/before.png">example</a></p>
+<p><img src="../../static/images/post_3/before.png" alt="antes"></p>
 <h1 id="versiones-de-mi-terminator-y-fedora">Versiones de mi terminator y fedora</h1>
 <ul>
-<li>terminator 2.1.1</li>
+<li>Terminator 2.1.1</li>
 <li>Fedora 33</li>
 <li>Python 3.10.5</li>
 </ul>
 <h1 id="solucióncomo-super-usuario">Solución(como super usuario):</h1>
 <ul>
+<li>Abrir el siguiente archivo con tu editor favorito<!-- raw HTML omitted --></li>
+</ul>
+<blockquote>
+<p>vim /usr/lib/python3.10/site-packages/terminatorlib/layoutlauncher.py</p>
+</blockquote>
+<ul>
 <li>
-<p>Abrir el siguiente archivo con tu editor favorito
-| vim /usr/lib/python3.10/site-packages/terminatorlib/layoutlauncher.py</p>
-</li>
-<li>
-<p>antes de la linea que contiene <em>if <strong>name</strong> == &lsquo;<strong>main</strong>':</em></p>
+<p>Antes de la linea que contiene <em>if <strong>name</strong> == &lsquo;<strong>main</strong>':</em></p>
 </li>
 <li>
 <p>Agregar el siguiente código:</p>
 </li>
 </ul>
-<p>| try:
-|    del os.environ[&lsquo;GTK_IM_MODULE&rsquo;]
-| except Exception as e:
-|     print(e)</p>
-<p><a href="../static/images/post_3/code.png">example</a></p>
+<blockquote>
+<p>try:<!-- raw HTML omitted -->
+    del os.environ[&lsquo;GTK_IM_MODULE&rsquo;]<!-- raw HTML omitted -->
+except Exception as e:<!-- raw HTML omitted -->
+    print(e)<!-- raw HTML omitted --></p>
+</blockquote>
+<p>ejmplo:</p>
+<p><img src="../../static/images/post_3/code.png" alt="codigo"></p>
 <ul>
 <li>Guardamos he iniciamos terminator con normalidad</li>
 </ul>
-<p><a href="../static/images/post_3/after.png">example</a></p>
+<p><img src="../../static/images/post_3/after.png" alt="despues"></p>
 <ul>
 <li>Y listo espero les sirva</li>
 </ul>
